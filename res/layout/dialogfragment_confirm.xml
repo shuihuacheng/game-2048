@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_backgroud"
+        android:orientation="vertical" >
+
+        <include layout="@layout/dialog_basic_title" />
+
+        <TextView
+            android:id="@+id/DialogFragment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="重新开始游戏?"
+            android:textColor="@color/txt_listitem_content"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/DialogFragment_btnCancle"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/dialog_btn_bottom_left"
+                android:text="取消"
+                android:textColor="@drawable/text_btn"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="41dp"
+                android:layout_weight="0"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/DialogFragment_btnOK"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/dialog_btn_bottom_right"
+                android:text="确定"
+                android:textColor="@drawable/text_btn"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

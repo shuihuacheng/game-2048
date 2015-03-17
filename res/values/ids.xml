@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- @hide -->
+    <item name="BasicTitle_root" type="id"></item>
+    <!-- @hide -->
+    <item name="BaseTitle_Title" type="id"/>
+    <!-- @hide -->
+    <item name="BaseTitle_CustomView" type="id"/>
+    <!-- @hide -->
+    <item name="BaseTitle_LBtn" type="id"/>
+    <!-- @hide -->
+    <item name="BaseTitle_RBtn" type="id"/>
+    <!-- @hide -->
+    <item name="Dialog_basic_title_Icon" type="id"/>
+    <!-- @hide -->
+    <item name="Dialog_basic_title_txt" type="id"/>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.xiaomi.d.games.tzfe.ranking.BasicTitle
+        android:id="@id/BasicTitle_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_dimens"
+        android:background="@color/orange" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7" >
+
+        <ListView
+            android:id="@+id/GameRanking_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollingCache="false" >
+        </ListView>
+
+        <com.xiaomi.d.games.tzfe.ranking.BaseLoadingView
+            android:id="@+id/GameRanking_LoadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.xiaomi.d.games.tzfe.ranking.BaseLoadingView>
+
+        <include layout="@layout/activity_netfailed" >
+        </include>
+
+        <include layout="@layout/activity_empty" />
+    </RelativeLayout>
+
+</LinearLayout>
